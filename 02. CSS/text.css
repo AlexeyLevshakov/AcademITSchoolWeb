@@ -1,0 +1,48 @@
+.content {
+    width: 820px;
+    height: 456px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #feeed6;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    color: #676565;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 5px;
+    text-align: justify;
+}
+
+h1 {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+p {
+    text-indent: 1em;
+    line-height: 1.2em;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+div {
+    margin-top: 0;
+    margin-bottom: 9px;
+}
+
+.crossed {
+    text-decoration: line-through;
+}
+
+.bluish {
+    color: #378db2;
+    font-weight: bold;
+}
+
+.text {
+    margin-top: 16px;
+}

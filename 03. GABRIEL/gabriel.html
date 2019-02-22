@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gabriel</title>
+    <link rel="stylesheet" href="gabriel.css">
+</head>
+<body>
+<header class="header">
+    <table class="menu">
+        <thead>
+        <tr>
+            <th class="link"><a href="http://www.google.com">Gabriel</a></th>
+            <th class="link cellWithBorder"><a>Gabriel блоки</a></th>
+            <th class="link cellWithBorder"><a>Сирена</a></th>
+            <th class="link cellWithBorder"><a>Amadeus</a></th>
+            <th class="link cellWithBorder"><a>Sabre</a></th>
+            <th class="link cellWithBorder"><a>Galileo</a></th>
+            <th class="link"><a>Бумажные</a></th>
+        </tr>
+        </thead>
+    </table>
+</header>
+
+<form>
+    <table class="firstTable">
+        <thead>
+        <tr>
+            <th>Валидатор</th>
+            <th>Буква</th>
+            <th>Адрес</th>
+            <th>Остаток ЕТ</th>
+            <th>Сколько необходимо ещё ЕТ</th>
+            <th>Комментарий</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>421-7176-1</td>
+            <td>А</td>
+            <td>РФ, г. Москва, ул. Усиевича, д.22, корп.1</td>
+            <td>10</td>
+            <td><input type="text" name="numberOfETNeeded1" value="200"></td>
+            <td><input type="text" name="commentary1" placeholder="Какой-то комментарий"></td>
+        </tr>
+        <tr>
+            <td>421-7736-1</td>
+            <td>А</td>
+            <td>Moldova, Chisinau, str. Alexandru cel Bun, 98</td>
+            <td>35</td>
+            <td><input type="text" name="numberOfETNeeded2" value="100"></td>
+            <td><input type="text" name="commentary2" placeholder="Какой-то комментарий"></td>
+        </tr>
+        <tr>
+            <td>421-3476-1</td>
+            <td></td>
+            <td>...г. Кишинёв, бульвар Штефан чел Маре, 3</td>
+            <td>50</td>
+            <td><input type="text" name="numberOfETNeeded3" value="20"></td>
+            <td><input type="text" name="commentary3" placeholder="Какой-то комментарий"></td>
+        </tr>
+        <tr>
+            <td>421-7176-1</td>
+            <td>А</td>
+            <td>РФ, г. Москва, ул. Усиевича, д.22, корп.1</td>
+            <td>70</td>
+            <td><input type="text" name="numberOfETNeeded4" value="200"></td>
+            <td><input type="text" name="commentary4" placeholder="Какой-то комментарий"></td>
+        </tr>
+        <tr>
+            <td>421-7736-1</td>
+            <td>А</td>
+            <td>Moldova, Chisinau, str. Alexandru cel Bun, 98</td>
+            <td>75</td>
+            <td><input type="text" name="numberOfETNeeded5" value="1000"></td>
+            <td><input type="text" name="commentary5" placeholder="Какой-то комментарий"></td>
+        </tr>
+        <tr>
+            <td>421-3476-1</td>
+            <td>А</td>
+            <td>...г. Кишинёв, бульвар Штефан чел Маре, 3</td>
+            <td>100</td>
+            <td><input type="text" name="numberOfETNeeded6" value="20"></td>
+            <td><input type="text" name="commentary6" placeholder="Какой-то комментарий"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div class="buttonsBlock">
+        <button type="button">Архив заявок</button>
+        <button type="reset">Отменить</button>
+        <button type="submit">Отправить</button>
+    </div>
+</form>
+
+<div class="lowerPart">
+    <h2>Предыдущие заявки</h2>
+    <span>Обновлено 13.11.2012, 15:45</span>
+    <button type="button" name="update"><img src="update.png"></button>
+
+    <table class="secondTable">
+        <thead class="secondTableHeader">
+        <tr>
+            <th>Дата, время заявки</th>
+            <th>Номер заявки</th>
+            <th>Статус</th>
+            <th>Система бронирования</th>
+            <th>Заказано</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>21.12.2012, 08:48</td>
+            <td>32512192E75B</td>
+            <td>На рассмотрении</td>
+            <td>Gabriel</td>
+            <td>400</td>
+        </tr>
+        <tr>
+            <td>18.12.2012, 10:04</td>
+            <td>32512192E75B</td>
+            <td>На рассмотрении</td>
+            <td>Amadeus</td>
+            <td>350</td>
+        </tr>
+        <tr>
+            <td>13.12.2012, 08:23</td>
+            <td>32512192E75B</td>
+            <td>На рассмотрении</td>
+            <td>Gabriel</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>13.12.2012, 08:23</td>
+            <td>32512192E75B</td>
+            <td>На рассмотрении</td>
+            <td>Gabriel</td>
+            <td>200</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

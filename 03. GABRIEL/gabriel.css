@@ -1,0 +1,45 @@
+body {
+    font-family: Calibri, Arial,sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #fed413;
+    height: 90px;
+    border-bottom: 2px solid lightgrey;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.secondTableHeader {
+    background-color: #fed413;
+}
+
+.menu {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.firstTable, .secondTable {
+    width: 100%;
+}
+
+.cellWithBorder {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+.link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:visited {
+    color: red;
+}
