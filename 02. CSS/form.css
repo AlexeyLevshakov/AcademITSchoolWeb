@@ -1,63 +1,58 @@
-body {
+.content {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #676565;
     font-size: 16px;
-    width: 840px;
-    border: 0;
+
+    width: 90%;
+    max-width: 840px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0;
+
 }
 
-h1 {
+.header {
     font-size: 2.12em;
     font-weight: normal;
     margin-left: 21px;
     margin-bottom: 0;
 }
 
-form {
+.form {
     height: 528px;
     background-color: #feeed6;
     padding-left: 21px;
     padding-right: 21px;
     padding-top: 4px;
-    font-size: 1em;
 }
 
-label {
+.form label {
     font-weight: bold;
-    font-size: 1em;
 }
 
-input, textarea {
+.form input, textarea {
     color: #999999;
-    font-size: 1em;
     padding-left: 17px;
-
+    width: 98%;
+    border: 0;
 }
 
-input {
-    width: 98%;
+.form input {
     height: 40px;
-    border: 0;
     margin-top: 0.5em;
 }
 
-textarea {
-    width: 98%;
+.form textarea {
     height: 128px;
-    border: 0;
     margin-top: 0.5em;
     padding-top: 10px;
     margin-bottom: 1em;
 }
 
-div {
+.form div {
     margin-top: 1em;
 }
 
-button {
+.form button {
     width: 171px;
     height: 37px;
     background-color: #378db2;

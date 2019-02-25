@@ -1,48 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
 .content {
-    width: 820px;
-    height: 456px;
+    width: 90%;
+    max-width: 850px;
     margin-left: auto;
     margin-right: auto;
-    background: #feeed6;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 18px;
-    color: #676565;
     padding-left: 12px;
     padding-right: 12px;
     padding-top: 5px;
+
+    background: #feeed6;
+
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    color: #676565;
+
     text-align: justify;
 }
 
-h1 {
+.header {
+    font-size: 32px;
+    font-weight: normal;
     text-align: left;
     margin-top: 0;
     margin-bottom: 10px;
-    font-weight: normal;
-    font-size: 30px;
-    letter-spacing: 1px;
 }
 
-p {
+.content p {
     text-indent: 1em;
-    line-height: 1.2em;
+    line-height: 1.4em;
     margin-top: 0;
     margin-bottom: 12px;
 }
 
-div {
+.content div {
     margin-top: 0;
-    margin-bottom: 9px;
+    margin-bottom: 10px;
+}
+
+.top {
+    margin-bottom: 2em;
 }
 
 .crossed {
     text-decoration: line-through;
+    line-height: 1.3em;
 }
 
 .bluish {
     color: #378db2;
     font-weight: bold;
+    font-size: 19px;
 }
 
-.text {
-    margin-top: 16px;
-}
