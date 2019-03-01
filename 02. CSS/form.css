@@ -14,7 +14,7 @@
     font-size: 2.12em;
     font-weight: normal;
     margin-left: 21px;
-    margin-bottom: 0;
+    margin-bottom: 5px;
 }
 
 .form {
@@ -29,8 +29,8 @@
     font-weight: bold;
 }
 
-.form input, textarea {
-    color: #999999;
+.form input, .form textarea {
+    color: black;
     padding-left: 17px;
     width: 98%;
     border: 0;
@@ -46,6 +46,7 @@
     margin-top: 0.5em;
     padding-top: 10px;
     margin-bottom: 1em;
+    resize: vertical;
 }
 
 .form div {
@@ -61,4 +62,9 @@
     font-weight: bold;
     border: 0;
     float: right;
+}
+
+.form button:hover {
+    background: blue;
+    cursor: pointer;
 }
