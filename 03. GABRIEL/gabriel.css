@@ -1,45 +1,283 @@
 body {
-    font-family: Calibri, Arial,sans-serif;
+    font-family: Calibri, Arial, sans-serif;
+    min-width: 600px;
 }
 
 * {
     box-sizing: border-box;
 }
 
-.header {
-    background-color: #fed413;
-    height: 90px;
-    border-bottom: 2px solid lightgrey;
-    padding-top: 2%;
-    padding-bottom: 2%;
+table {
+    border-collapse: collapse;
 }
 
-.secondTableHeader {
+.pageHeader {
     background-color: #fed413;
+    height: 60px;
+    border-bottom: 1px solid lightgrey;
+    padding-top: 15px;
+    font-family: Tahoma, sans-serif;
+    font-size: 18px;
 }
 
 .menu {
+    display: table;
+    border-collapse: collapse;
     width: 100%;
 }
 
-table {
-    border-collapse: collapse;
+.menuRow {
+    display: table-row;
+    height: 30px;
+}
+
+.menuCell {
+    display: table-cell;
+    width: calc(100% / 7);
+    text-align: center;
+    vertical-align: middle;
+}
+
+.subtext {
+    font-size: xx-small;
+}
+
+.cellWithBorder {
+    border-left: 1px solid #c6a613;
+    border-right: 1px solid #c6a613;
+}
+
+.hyperlink:link {
+    text-decoration: none;
+    color: #846f0d;
+}
+
+.hyperlink:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hyperlink:visited {
+    color: #d50307;
+    text-decoration: underline;
+}
+
+.inactive {
+    color: #debc18;
+}
+
+.hyperlink.inactive:hover {
+    text-decoration: none;
+    cursor: default;
+}
+
+.background {
+    background: linear-gradient(#fdfdfd, #e2e2e3);
 }
 
 .firstTable, .secondTable {
     width: 100%;
 }
 
-.cellWithBorder {
-    border-left: 1px solid grey;
-    border-right: 1px solid grey;
+.firstTableContainer {
+    margin: 0 20px 30px 20px;
+    height: 266px;
+    overflow-y: auto;
 }
 
-.link:hover {
-    text-decoration: underline;
+.firstTable th {
+    text-align: left;
+    border-bottom: 1px solid #dcdddd;
+    height: 32px;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: #6d6d6d;
+}
+
+.firstTable td {
+    height: 40px;
+    font-size: 11px;
+    font-family: Arial, sans-serif;
+    color: #6c6c6c;
+}
+
+.firstTable td.column1 {
+    width: 9%;
+}
+
+.firstTable td.column2 {
+    width: 5.5%;
+}
+
+.firstTable td.column3 {
+    width: 28%;
+}
+
+.firstTable td.column4 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    width: 8.5%;
+}
+
+.firstTable td.column5 {
+    width: 28%;
+}
+
+.firstTable input {
+    width: 40px;
+    font-size: 11px;
+    padding: 0 5px;
+    height: 18px;
+}
+
+.firstTable input[placeholder] {
+    width: 200px;
+    font-size: 11px;
+    padding: 0 10px;
+}
+
+.buttonsBlock {
+    width: 100%;
+}
+
+.floatRight {
+    float: right;
+}
+
+.buttonsBlock button {
+    width: 174px;
+    height: 40px;
+    font-size: 17px;
+}
+
+.archiveButton, .cancelButton {
+    background: linear-gradient(#9ec454, #7ca92f);
+    color: #ffffff;
+    border: 1px solid #628428;
+    text-shadow: 1px 0 black;
     cursor: pointer;
 }
 
-a:visited {
-    color: red;
+.archiveButton:hover, .cancelButton:hover {
+    background: darkgreen;
+}
+
+.archiveButton {
+    margin-left: 24px;
+}
+
+.sendButton {
+    background: linear-gradient(#ffffff, #c8c8c8);
+    color: #919191;
+    border: 1px solid #afb0b0;
+    margin-right: 24px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.sendButton:hover {
+    background: pink;
+}
+
+.lowerPanel {
+    height: 35px;
+    margin: 50px 24px 0;
+    display: inline-block;
+    width: 90%;
+    vertical-align: middle;
+    position: relative;
+}
+
+.lowerPanel h2, .lowerPanel span, .lowerPanel button {
+    display: inline-block;
+}
+
+.lowerPanel h2 {
+    color: #777777;
+    font-size: 20px;
+    margin: 0;
+}
+
+.lowerPanel span {
+    font-size: 13px;
+    color: #636363;
+    position: relative;
+    top: 4px;
+    left: 20px;
+}
+
+.lowerPanel button {
+    width: 46px;
+    height: 46px;
+    border: none;
+    cursor: pointer;
+    background: url(update.png) no-repeat ;
+    position: relative;
+    bottom: 12px;
+    left: 40px;
+}
+
+.secondTableContainer {
+    width: 100%;
+    height: 156px;
+    overflow-y: auto;
+    box-shadow: 0 -2px #d3d0c0;
+}
+
+.secondTableHeader {
+    background-color: #fcd625;
+    color: #6e5d0d;
+}
+
+.underConsideration {
+    background: #b4d3f8;
+}
+
+.secondTable .underConsideration * {
+    border: 1px dotted #ffffff;
+}
+
+.secondTable th {
+    height: 31px;
+    border: 1px dotted #dfb900;
+    font-size: 12px;
+    text-align: left;
+    padding: 0 15px;
+}
+
+.secondTable td {
+    height: 31px;
+    border: 1px dotted #c9caca;
+    font-size: 12px;
+    text-align: left;
+    padding: 0 15px;
+}
+
+.secondTable .deleteButton {
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    background: url(delete.png) no-repeat ;
+    float: right;
+    margin: 0 5px;
+}
+
+.secondTable .column1 {
+    width: 17%;
+    padding-left: 28px;
+}
+
+.secondTable .column2 {
+    width: 15%;
+}
+
+.secondTable .column3 {
+    width: 14.5%
+}
+
+.secondTable .column4 {
+    width: 18%;
 }

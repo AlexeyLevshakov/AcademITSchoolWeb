@@ -3,143 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <title>Gabriel</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="gabriel.css">
 </head>
 <body>
-<header class="header">
-    <table class="menu">
-        <thead>
-        <tr>
-            <th class="link"><a href="http://www.google.com">Gabriel</a></th>
-            <th class="link cellWithBorder"><a>Gabriel блоки</a></th>
-            <th class="link cellWithBorder"><a>Сирена</a></th>
-            <th class="link cellWithBorder"><a>Amadeus</a></th>
-            <th class="link cellWithBorder"><a>Sabre</a></th>
-            <th class="link cellWithBorder"><a>Galileo</a></th>
-            <th class="link"><a>Бумажные</a></th>
-        </tr>
-        </thead>
-    </table>
+<header class="pageHeader">
+    <div class="menu">
+        <div class="menuRow">
+            <div class="menuCell"><a class="hyperlink" href="#1">Gabriel</a></div>
+            <div class="menuCell cellWithBorder"><a class="hyperlink" href="#2">Gabriel <span
+                    class="subtext">блоки</span></a></div>
+            <div class="menuCell cellWithBorder"><a class="hyperlink" href="#3">Сирена</a></div>
+            <div class="menuCell cellWithBorder"><a class="hyperlink" href="#4">Amadeus</a></div>
+            <div class="menuCell cellWithBorder"><a class="hyperlink inactive">Sabre</a></div>
+            <div class="menuCell cellWithBorder"><a class="hyperlink inactive">Galileo</a></div>
+            <div class="menuCell"><a class="hyperlink" href="#6">Бумажные</a></div>
+        </div>
+    </div>
 </header>
 
-<form>
-    <table class="firstTable">
-        <thead>
-        <tr>
-            <th>Валидатор</th>
-            <th>Буква</th>
-            <th>Адрес</th>
-            <th>Остаток ЕТ</th>
-            <th>Сколько необходимо ещё ЕТ</th>
-            <th>Комментарий</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>421-7176-1</td>
-            <td>А</td>
-            <td>РФ, г. Москва, ул. Усиевича, д.22, корп.1</td>
-            <td>10</td>
-            <td><input type="text" name="numberOfETNeeded1" value="200"></td>
-            <td><input type="text" name="commentary1" placeholder="Какой-то комментарий"></td>
-        </tr>
-        <tr>
-            <td>421-7736-1</td>
-            <td>А</td>
-            <td>Moldova, Chisinau, str. Alexandru cel Bun, 98</td>
-            <td>35</td>
-            <td><input type="text" name="numberOfETNeeded2" value="100"></td>
-            <td><input type="text" name="commentary2" placeholder="Какой-то комментарий"></td>
-        </tr>
-        <tr>
-            <td>421-3476-1</td>
-            <td></td>
-            <td>...г. Кишинёв, бульвар Штефан чел Маре, 3</td>
-            <td>50</td>
-            <td><input type="text" name="numberOfETNeeded3" value="20"></td>
-            <td><input type="text" name="commentary3" placeholder="Какой-то комментарий"></td>
-        </tr>
-        <tr>
-            <td>421-7176-1</td>
-            <td>А</td>
-            <td>РФ, г. Москва, ул. Усиевича, д.22, корп.1</td>
-            <td>70</td>
-            <td><input type="text" name="numberOfETNeeded4" value="200"></td>
-            <td><input type="text" name="commentary4" placeholder="Какой-то комментарий"></td>
-        </tr>
-        <tr>
-            <td>421-7736-1</td>
-            <td>А</td>
-            <td>Moldova, Chisinau, str. Alexandru cel Bun, 98</td>
-            <td>75</td>
-            <td><input type="text" name="numberOfETNeeded5" value="1000"></td>
-            <td><input type="text" name="commentary5" placeholder="Какой-то комментарий"></td>
-        </tr>
-        <tr>
-            <td>421-3476-1</td>
-            <td>А</td>
-            <td>...г. Кишинёв, бульвар Штефан чел Маре, 3</td>
-            <td>100</td>
-            <td><input type="text" name="numberOfETNeeded6" value="20"></td>
-            <td><input type="text" name="commentary6" placeholder="Какой-то комментарий"></td>
-        </tr>
-        </tbody>
-    </table>
+<div class="background">
+    <form method="post" action="handler.php">
+        <div class="firstTableContainer">
+            <table class="firstTable">
+                <thead>
+                <tr>
+                    <th class="column1">Валидатор</th>
+                    <th class="column2">Буква</th>
+                    <th class="column3">Адрес</th>
+                    <th class="column4">Остаток ЕТ</th>
+                    <th class="column5">Сколько необходимо ещё ЕТ</th>
+                    <th class="column6">Комментарий</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="column1">421-7176-1</td>
+                    <td class="column2">А</td>
+                    <td class="column3">РФ, г. Москва, ул. Усиевича, д.22, корп.1</td>
+                    <td class="column4">10</td>
+                    <td class="column5"><input type="text" name="numberOfETNeeded1" value="200"></td>
+                    <td class="column6"><input type="text" name="commentary1" placeholder="Какой-то комментарий"></td>
+                </tr>
+                <tr>
+                    <td>421-7736-1</td>
+                    <td>А</td>
+                    <td>Moldova, Chisinau, str. Alexandru cel Bun, 98</td>
+                    <td class="column4">35</td>
+                    <td><input type="text" name="numberOfETNeeded2" value="100"></td>
+                    <td><input type="text" name="commentary2" placeholder="Какой-то комментарий"></td>
+                </tr>
+                <tr>
+                    <td>421-3476-1</td>
+                    <td></td>
+                    <td>...г. Кишинёв, бульвар Штефан чел Маре, 3</td>
+                    <td class="column4">50</td>
+                    <td><input type="text" name="numberOfETNeeded3" value="20"></td>
+                    <td><input type="text" name="commentary3" placeholder="Какой-то комментарий"></td>
+                </tr>
+                <tr>
+                    <td>421-7176-1</td>
+                    <td>А</td>
+                    <td>РФ, г. Москва, ул. Усиевича, д.22, корп.1</td>
+                    <td class="column4">70</td>
+                    <td><input type="text" name="numberOfETNeeded4" value="200"></td>
+                    <td><input type="text" name="commentary4" placeholder="Какой-то комментарий"></td>
+                </tr>
+                <tr>
+                    <td>421-7736-1</td>
+                    <td>А</td>
+                    <td>Moldova, Chisinau, str. Alexandru cel Bun, 98</td>
+                    <td class="column4">75</td>
+                    <td><input type="text" name="numberOfETNeeded5" value="1000"></td>
+                    <td><input type="text" name="commentary5" placeholder="Какой-то комментарий"></td>
+                </tr>
+                <tr>
+                    <td>421-3476-1</td>
+                    <td>А</td>
+                    <td>...г. Кишинёв, бульвар Штефан чел Маре, 3</td>
+                    <td class="column4">100</td>
+                    <td><input type="text" name="numberOfETNeeded6" value="20"></td>
+                    <td><input type="text" name="commentary6" placeholder="Какой-то комментарий"></td>
+                </tr>
+                <tr>
+                    <td>421-7176-1</td>
+                    <td>А</td>
+                    <td>РФ, г. Москва, ул. Усиевича, д.22, корп.1</td>
+                    <td class="column4">70</td>
+                    <td><input type="text" name="numberOfETNeeded4" value="200"></td>
+                    <td><input type="text" name="commentary4" placeholder="Какой-то комментарий"></td>
+                </tr>
+                <tr>
+                    <td>421-7736-1</td>
+                    <td>А</td>
+                    <td>Moldova, Chisinau, str. Alexandru cel Bun, 98</td>
+                    <td class="column4">75</td>
+                    <td><input type="text" name="numberOfETNeeded5" value="1000"></td>
+                    <td><input type="text" name="commentary5" placeholder="Какой-то комментарий"></td>
+                </tr>
+                <tr>
+                    <td>421-3476-1</td>
+                    <td>А</td>
+                    <td>...г. Кишинёв, бульвар Штефан чел Маре, 3</td>
+                    <td class="column4">100</td>
+                    <td><input type="text" name="numberOfETNeeded6" value="20"></td>
+                    <td><input type="text" name="commentary6" placeholder="Какой-то комментарий"></td>
+                </tr>
+                <tr>
+                    <td>421-7176-1</td>
+                    <td>А</td>
+                    <td>РФ, г. Москва, ул. Усиевича, д.22, корп.1</td>
+                    <td class="column4">70</td>
+                    <td><input type="text" name="numberOfETNeeded4" value="200"></td>
+                    <td><input type="text" name="commentary4" placeholder="Какой-то комментарий"></td>
+                </tr>
+                <tr>
+                    <td>421-7736-1</td>
+                    <td>А</td>
+                    <td>Moldova, Chisinau, str. Alexandru cel Bun, 98</td>
+                    <td class="column4">75</td>
+                    <td><input type="text" name="numberOfETNeeded5" value="1000"></td>
+                    <td><input type="text" name="commentary5" placeholder="Какой-то комментарий"></td>
+                </tr>
+                <tr>
+                    <td>421-3476-1</td>
+                    <td>А</td>
+                    <td>...г. Кишинёв, бульвар Штефан чел Маре, 3</td>
+                    <td class="column4">100</td>
+                    <td><input type="text" name="numberOfETNeeded6" value="20"></td>
+                    <td><input type="text" name="commentary6" placeholder="Какой-то комментарий"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
 
-    <div class="buttonsBlock">
-        <button type="button">Архив заявок</button>
-        <button type="reset">Отменить</button>
-        <button type="submit">Отправить</button>
+        <div class="buttonsBlock">
+            <button type="button" class="archiveButton">Архив заявок</button>
+            <button type="submit" class="floatRight sendButton">Отправить</button>
+            <button type="reset" class="floatRight cancelButton">Отменить</button>
+        </div>
+
+        <div class="lowerPanel">
+            <h2>Предыдущие заявки</h2>
+            <button type="button" name="update" class="floatRight"></button>
+            <span class="floatRight">Обновлено 13.11.2012, 15:45</span>
+        </div>
+    </form>
+
+    <div class="secondTableContainer">
+        <table class="secondTable">
+            <thead class="secondTableHeader">
+            <tr>
+                <th class="column1">Дата, время заявки</th>
+                <th>Номер заявки</th>
+                <th>Статус</th>
+                <th>Система бронирования</th>
+                <th>Заказано</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="underConsideration">
+                <td class="column1">21.12.2012, 08:04</td>
+                <td class="column2">32512192E75B</td>
+                <td class="column3">На рассмотрении</td>
+                <td class="column4">Gabriel</td>
+                <td class="column5">400
+                    <button type="button" class="deleteButton"></button>
+                </td>
+            </tr>
+            <tr class="underConsideration">
+                <td class="column1">18.12.2012, 10:04</td>
+                <td>32512192E75B</td>
+                <td>На рассмотрении</td>
+                <td>Amadeus</td>
+                <td>350
+                    <button type="button" class="deleteButton"></button>
+                </td>
+            </tr>
+            <tr>
+                <td class="column1">13.12.2012, 08:23</td>
+                <td>32512192E75B</td>
+                <td>Рассмотрена</td>
+                <td>Gabriel</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td class="column1">13.12.2012, 08:23</td>
+                <td>32512192E75B</td>
+                <td>Расммотрена</td>
+                <td>Gabriel</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td class="column1">13.12.2012, 08:23</td>
+                <td>32512192E75B</td>
+                <td>Рассмотрена</td>
+                <td>Gabriel</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td class="column1">13.12.2012, 08:23</td>
+                <td>32512192E75B</td>
+                <td>Расммотрена</td>
+                <td>Gabriel</td>
+                <td>200</td>
+            </tr>
+            </tbody>
+        </table>
     </div>
-</form>
-
-<div class="lowerPart">
-    <h2>Предыдущие заявки</h2>
-    <span>Обновлено 13.11.2012, 15:45</span>
-    <button type="button" name="update"><img src="update.png"></button>
-
-    <table class="secondTable">
-        <thead class="secondTableHeader">
-        <tr>
-            <th>Дата, время заявки</th>
-            <th>Номер заявки</th>
-            <th>Статус</th>
-            <th>Система бронирования</th>
-            <th>Заказано</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>21.12.2012, 08:48</td>
-            <td>32512192E75B</td>
-            <td>На рассмотрении</td>
-            <td>Gabriel</td>
-            <td>400</td>
-        </tr>
-        <tr>
-            <td>18.12.2012, 10:04</td>
-            <td>32512192E75B</td>
-            <td>На рассмотрении</td>
-            <td>Amadeus</td>
-            <td>350</td>
-        </tr>
-        <tr>
-            <td>13.12.2012, 08:23</td>
-            <td>32512192E75B</td>
-            <td>На рассмотрении</td>
-            <td>Gabriel</td>
-            <td>200</td>
-        </tr>
-        <tr>
-            <td>13.12.2012, 08:23</td>
-            <td>32512192E75B</td>
-            <td>На рассмотрении</td>
-            <td>Gabriel</td>
-            <td>200</td>
-        </tr>
-        </tbody>
-    </table>
 </div>
-
 </body>
 </html>
