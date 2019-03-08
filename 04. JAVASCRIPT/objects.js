@@ -70,7 +70,7 @@ var countries = [russia, usa, france, greatBritain];
 function getCountriesWithMostCities(array) {
     var countriesWithMostCities = [];
     var maxCitiesNumber = 0;
-    array.forEach(function (element) {
+    array.map(function (element) {
         if (element.cities.length > maxCitiesNumber) {
             countriesWithMostCities = [element.countryName];
             maxCitiesNumber = element.cities.length;
@@ -85,7 +85,7 @@ console.log("Страна/страны с наибольшим количест�
 
 function getTotalCountryPopulation(country) {
     var totalCountryPopulation = 0;
-    country.cities.forEach(function (city) {
+    country.cities.map(function (city) {
         totalCountryPopulation += city.population;
     });
     return totalCountryPopulation;
@@ -93,7 +93,7 @@ function getTotalCountryPopulation(country) {
 
 function getStatistics(array) {
     var statistics = {};
-    array.forEach(function (element) {
+    array.map(function (element) {
         statistics[element.countryName] = getTotalCountryPopulation(element);
     });
     return statistics;
