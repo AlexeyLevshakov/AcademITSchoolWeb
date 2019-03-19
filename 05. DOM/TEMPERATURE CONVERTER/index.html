@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Задача "Перевод температур"</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./temperatureConverter.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="header">Конвертер температур</h1>
+    <label>Введите температуру в градусах Цельсия: <input type="text" class="input-temperature" value="0"></label>
+    <br>
+
+    <button type="button" class="conversion-button">Перевести температуру</button>
+    <br>
+
+    <div class="error-NaN">
+        Вы ввели значение, отличное от числового. Введите число.
+    </div>
+
+    <div class="error-below-absolute-zero">
+        Вы ввели температуру ниже абсолютного нуля. Такой температуры не существует в природе. Попробуйте ввести
+        значение большее чем -273.15
+    </div>
+
+    <span>В кельвинах она равна: </span><span class="kelvins"></span>
+    <br>
+
+    <span>В градусах Фаренгейта она равна: </span><span class="degrees-Fahrenheit"></span>
+</div>
+
+<script src="./temperatureConverter.js"></script>
+</body>
+</html>
