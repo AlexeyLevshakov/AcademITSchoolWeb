@@ -1,6 +1,6 @@
 "use strict"
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
     var conversionButton = document.querySelector(".conversion-button");
     conversionButton.addEventListener("click", function() {
         var inputTemperature = document.querySelector(".input-temperature");
@@ -9,13 +9,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
         var temperatureDegreesCelsius = +inputTemperature.value;
 
-        var errorNaN = document.querySelector(".error-NaN");
-        errorNaN.setAttribute("style", "display: none");
-        var errorBelowAbsoluteZero = document.querySelector(".error-below-absolute-zero");
-        errorBelowAbsoluteZero.setAttribute("style", "display: none");
+        var errorUndefined = document.querySelector(".error-undefined");
+        errorUndefined.style.display = "none";
 
-        if(isNaN(temperatureDegreesCelsius)) {
-            errorNaN.setAttribute("style", "display: block");
+        var errorNaN = document.querySelector(".error-NaN");
+        errorNaN.style.display = "none";
+
+        var errorBelowAbsoluteZero = document.querySelector(".error-below-absolute-zero");
+        errorBelowAbsoluteZero.style.display = "none";
+
+        if (inputTemperature.value === "") {
+            errorUndefined.style.display = "block";
+            kelvins.innerText = "";
+            degreesFahrenheit.innerText = "";
+            return;
+        }
+
+        if (isNaN(temperatureDegreesCelsius)) {
+            errorNaN.style.display = "block";
             kelvins.innerText = "";
             degreesFahrenheit.innerText = "";
             return;
@@ -23,8 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         var ABSOLUTE_ZERO_CELSIUS = -273.15;
         var EPSILON = 1.0e-10;
-        if (ABSOLUTE_ZERO_CELSIUS - temperatureDegreesCelsius > EPSILON ) {
-            errorBelowAbsoluteZero.setAttribute("style", "display: block");
+        if (ABSOLUTE_ZERO_CELSIUS - temperatureDegreesCelsius > EPSILON) {
+            errorBelowAbsoluteZero.style.display = "block";
             kelvins.innerText = "";
             degreesFahrenheit.innerText = "";
             return;

@@ -9,11 +9,19 @@
 <body>
 <div class="container">
     <h1 class="header">Конвертер температур</h1>
-    <label>Введите температуру в градусах Цельсия: <input type="text" class="input-temperature" value="0"></label>
-    <br>
 
-    <button type="button" class="conversion-button">Перевести температуру</button>
-    <br>
+    <div>
+        <label>Введите температуру в градусах Цельсия: <input type="text" class="input-temperature"
+                                                              placeholder="введите число"></label>
+    </div>
+
+    <div>
+        <button type="button" class="conversion-button">Перевести температуру</button>
+    </div>
+
+    <div class="error-undefined">
+        Не было введено никакого значения. Введите число.
+    </div>
 
     <div class="error-NaN">
         Вы ввели значение, отличное от числового. Введите число.
@@ -24,10 +32,13 @@
         значение большее чем -273.15
     </div>
 
-    <span>В кельвинах она равна: </span><span class="kelvins"></span>
-    <br>
+    <div>
+        <span>В кельвинах она равна: </span><span class="kelvins"></span>
+    </div>
 
-    <span>В градусах Фаренгейта она равна: </span><span class="degrees-Fahrenheit"></span>
+    <div>
+        <span>В градусах Фаренгейта она равна: </span><span class="degrees-Fahrenheit"></span>
+    </div>
 </div>
 
 <script src="./temperatureConverter.js"></script>
