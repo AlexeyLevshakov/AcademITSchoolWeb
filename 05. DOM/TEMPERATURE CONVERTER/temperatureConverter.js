@@ -1,8 +1,8 @@
-"use strict"
+"use strict";
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var conversionButton = document.querySelector(".conversion-button");
-    conversionButton.addEventListener("click", function() {
+    conversionButton.addEventListener("click", function () {
         var inputTemperature = document.querySelector(".input-temperature");
         var kelvins = document.querySelector(".kelvins");
         var degreesFahrenheit = document.querySelector(".degrees-Fahrenheit");
@@ -41,10 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
 
-        var temperatureKelvins = Math.round((temperatureDegreesCelsius + 273.15) * 100) / 100;
-        kelvins.innerText = temperatureKelvins;
-
-        var temperatureFahrenheit = Math.round((temperatureDegreesCelsius * 1.8 + 32) * 100) / 100;
-        degreesFahrenheit.innerText = temperatureFahrenheit;
+        kelvins.innerText = Math.round((temperatureDegreesCelsius + 273.15) * 100) / 100;
+        degreesFahrenheit.innerText = Math.round((temperatureDegreesCelsius * 1.8 + 32) * 100) / 100;
     });
 });

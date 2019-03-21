@@ -1,0 +1,47 @@
+body {
+    font-family: Verdana, Calibri, Arial, sans-serif;
+}
+
+.container {
+    width: 70%;
+    min-width: 750px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    line-height: 1.5em;
+    background: url("./blocknote.png") repeat-y;
+}
+
+.add-note-panel {
+    text-align: center;
+    margin: 51px 0 48px;
+}
+
+.container h1 {
+    text-align: center;
+    font-family: "comic sans MS", cursive;
+}
+
+.container button {
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+.container button:hover {
+    background-color: Ivory;
+}
+
+.list {
+    padding-left: 100px;
+    line-height: 2.05em;
+}
+
+.list span {
+    font-weight: bold;
+    letter-spacing: 0.03em;
+}
+
+.list button {
+    margin: 5px 5px;
+    vertical-align: middle;
+    float: right;
+}
