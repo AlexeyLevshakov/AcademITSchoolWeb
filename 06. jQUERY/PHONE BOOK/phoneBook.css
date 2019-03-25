@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Calibri, Arial, sans-serif;
+}
+
+.add-info-button {
+    cursor: pointer;
+    transition: 0.1s ease-in;
+}
+
+.add-info-button:hover {
+    background-color: Ivory;
+}
+
+form input {
+    padding: 0.1em 0.5em;
+}
+
+.phone-book-table, .phone-book-table th, .phone-book-table td {
+    border: 1px dotted black;
+}
+
+.input-form {
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    font-family: "Courier New", monospace;
+}
+
+.phone-book-table {
+    border-collapse: collapse;
+    margin: 30px auto;
+    width: 75%;
+}
+
+.phone-book-table td {
+    padding: 0.1em 0.5em;
+}
+
+.no-surname-error, .no-name-error, .no-phone-number-error {
+    color: red;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0;
+    display: none;
+}
+
+.no-data {
+    border: 2px solid red;
+}
+
+.phone-book-table .first-column, .phone-book-table .fifth-column {
+    text-align: center;
+}
+
+.phone-book-table .first-column {
+    width: 10%;
+}
+
+.phone-book-table .second-column {
+    width: 30%;
+}
+
+.phone-book-table .third-column {
+    width: 25%;
+}
+
+.phone-book-table .fourth-column {
+    width: 30%;
+}
+
+.phone-book-table .fifth-column {
+    width: 5%;
+}
+
+button.delete-entry {
+    background: transparent;
+    cursor: pointer;
+    border: 0;
+}
+
+button.delete-entry:hover {
+    font-weight: bold;
+}
+
+.phone-book-table tbody tr:nth-child(even) {
+    background: #ffe6dc;
+}

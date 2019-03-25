@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задача "Phone Book"</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./phoneBook.css">
+</head>
+<body>
+<h1 class="header">&#9742 Phone book</h1>
+<form class="input-form">
+    <input type="text" class="surname" placeholder="Фамилия">
+    <input type="text" class="name" placeholder="Имя">
+    <input type="text" class="phone-number" placeholder="Номер телефона">
+    <button type="button" class="add-info-button">Добавить запись</button>
+</form>
+
+<div class="no-surname-error">
+    Вы не ввели фамилию. Пожалуйста, заполните первое поле.
+</div>
+
+<div class="no-name-error">
+    Вы не ввели имя. Пожалуйста, заполните второе поле.
+</div>
+
+<div class="no-phone-number-error">
+    Вы не ввели номер телефона. Пожалуйста, заполните третье поле.
+</div>
+
+<table class="phone-book-table">
+    <thead>
+    <tr>
+        <th class="first-column">№</th>
+        <th class="second-column">Фамилия</th>
+        <th class="third-column">Имя</th>
+        <th class="fourth-column">Номер телефона</th>
+        <th class="fifth-column"></th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<script src="./libs/jQuery.js"></script>
+<script src="./phoneBook.js"></script>
+</body>
+</html>
